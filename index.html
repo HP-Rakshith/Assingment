@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 500px;
+            height: 350px;
+            border: 3px solid black ; 
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 4</h1>
+    <h2> score <span id="points"> 0 </span></h2>
+   <div>  <img src="vecteezy_cartoon-little-bee-holding-honey-jar_.jpg" id="change1"> 
+     <img src="vecteezy_honeycomb-clipart-design-illustration_9385359_758.png" id="change2"> </div>
+      <script>
+        let value= 0;
+        const pointElement=document.getElementById("points");
+        document.getElementById("change1").addEventListener("click",()=>{
+            value=value - 5;
+            pointElement.textContent=value;
+        });
+        document.getElementById("change2").addEventListener("click",()=>{
+            value = value + 5;
+           pointElement.textContent= value;
+        });
+      </script>
+</body>
+</html>
